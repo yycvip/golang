@@ -1,9 +1,12 @@
 package main
 
-import "net/http"
+import (
+	"fmt"
+)
 
 func main() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-	})
-	http.ListenAndServe("localhost:8080", nil)
+	fmt.Println("ceshi")
+	// http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+	// })
+	// http.ListenAndServe("localhost:8080", nil)
 }
